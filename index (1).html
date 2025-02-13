@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc de Sant Martí</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function ActivarArcoiris() {
+            document.getElementById('p1').className = 'red';
+            document.getElementById('p2').className = 'naranja';
+            document.getElementById('p3').className = 'amarillo';
+            document.getElementById('p4').className = 'verde';
+            document.getElementById('p5').className = 'azulclaro';
+            document.getElementById('p6').className = 'azul';
+            document.getElementById('p7').className = 'morado';
+        }
+    </script>
+
+</head>
+
+<!-- Si quiero comentar: Archivo > preferencias > Métodos abreviados > Buscar coment y ponerle Ctrl+K  -->
+
+<body>
+    <header class="fondo">
+    <h3 onclick="ActivarArcoiris()"><b>Arcoiris</b></h3>
+    </header>
+    <p id="p1" onmouseover="this.className='red'" onmouseout="this.className='negro'">roig, red, rojo</p>
+    <p id="p2" onmouseover="this.className='naranja'" onmouseout="this.className='negro'">taronja, orange, naranja</p>
+    <p id="p3" onmouseover="this.className='amarillo'" onmouseout="this.className='negro'">groc, yellow, amarillo</p>
+    <p id="p4" onmouseover="this.className='verde'" onmouseout="this.className='negro'">verd, green, verde</p>
+    <p id="p5" onmouseover="this.className='azulclaro'" onmouseout="this.className='negro'">blau clar, light blue, azul claro</p>
+    <p id="p6" onmouseover="this.className='azul'" onmouseout="this.className='negro'">blau, blue, azul</p>
+    <p id="p7" onmouseover="this.className='morado'" onmouseout="this.className='negro'">morat, putple, morado</p>
+
+
+    <br>
+</body>
+</html>
